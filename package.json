@@ -87,6 +87,8 @@
     "lint-fix": "eslint --ext .js,.ts,.tsx . --fix",
     "prettier": "prettier \"**/*.{js,json,ts,tsx,css,md}\"",
     "prettier-fix": "prettier \"**/*.{js,json,ts,tsx,css,md}\" --write",
+    "prepare": "npm run build-v5",
+    "prepack": "npm run build-v5",
     "preversion": "npm run check",
     "start": "webpack-dev-server --mode development",
     "start:next": "cd ./examples/nextjs && yarn dev",
